@@ -1,6 +1,7 @@
 /* eslint-disable no-unused-vars */
 import { data } from '../data/regex';
 import RegexCard from '../ui/RegexCard';
+import { DiDart } from 'react-icons/di';
 
 function HomePage() {
   return (
@@ -15,7 +16,10 @@ function HomePage() {
         </p>
       </div>
       <div className="mt-[5rem]">
-        <div className=" w-full rounded-md bg-blue-100 px-6 py-2 font-semibold text-blue-500 sm:w-[5rem]">
+        <div className=" flex w-full items-center justify-center gap-3 rounded-md bg-blue-100 px-6 py-2 font-semibold text-blue-500 sm:w-[9rem] lg:justify-start">
+          <span className="text-3xl">
+            <DiDart />
+          </span>{' '}
           Dart
         </div>
       </div>

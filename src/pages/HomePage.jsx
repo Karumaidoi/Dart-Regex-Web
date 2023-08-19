@@ -26,15 +26,17 @@ function HomePage() {
         </div>
       </div>
 
-      <div className="mt-10 grid grid-cols-1 gap-4  lg:grid-cols-2">
-        {isLoading ? (
-          <div className="flex items-center justify-center">
-            <span className="loading loading-ring loading-lg"></span>
-          </div>
-        ) : (
-          data?.map((regex, i) => <RegexCard regex={regex} key={regex.id} />)
-        )}
-      </div>
+      {isLoading || error !== null ? (
+        <div className="flex h-[15rem] w-full items-center justify-center md:h-[25rem]">
+          <span className="loading loading-ring loading-lg"></span>
+        </div>
+      ) : (
+        <div className="mt-10 grid grid-cols-1 gap-4  lg:grid-cols-2">
+          {data?.map((regex, i) => (
+            <RegexCard regex={regex} key={regex.id} />
+          ))}
+        </div>
+      )}
     </div>
   );
 }

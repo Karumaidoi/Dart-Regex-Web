@@ -32,9 +32,9 @@ function RegexPage() {
             <span className="text-2xl">
               <DiGitBranch />
             </span>
-            <Link className="hover:underline">
-              Contribute Regex Expression. Try it now!.
-            </Link>
+            <a className="cursor-pointer hover:underline">
+              Contribute Regex Expression. Get Started!.
+            </a>
           </div>
         </div>
 

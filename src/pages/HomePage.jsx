@@ -12,7 +12,7 @@ function HomePage() {
         </h4>
         <p className="mt-4  leading-relaxed">
           RegEx Library - a curated list of useful regular expressions for
-          different <br /> programming languages.
+          <br /> Dart language.
         </p>
       </div>
       <div className="mt-[5rem] flex flex-col gap-4">

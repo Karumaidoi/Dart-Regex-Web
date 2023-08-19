@@ -12,6 +12,8 @@ function App() {
           <Route path="dart-regex" element={<HomePage />} />
           <Route path="regex" element={<RegexPage />} />
         </Route>
+
+        <Route path="*" element={<HomePage />} />
       </Routes>
     </BrowserRouter>
   );

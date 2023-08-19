@@ -7,5 +7,3 @@ export const supabase = createClient(
   'https://panltosbozirtaxltbtb.supabase.co',
   supabaseKey,
 );
-
-console.log(supabase);

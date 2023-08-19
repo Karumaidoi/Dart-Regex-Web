@@ -2,17 +2,12 @@ import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom';
 import AppLayout from './ui/AppLayout';
 import HomePage from './pages/HomePage';
 import RegexPage from './pages/RegexPage';
-import { QueryClientProvider, QueryClient } from 'react-query';
-
-const queryClient = new QueryClient({
-  defaultOptions: {
-    queries: {
-      staleTime: 60 * 1000,
-    },
-  },
-});
+import { QueryClientProvider } from 'react-query';
+import { useClient } from './hooks/useClient';
 
 function App() {
+  const queryClient = useClient();
+
   return (
     <QueryClientProvider client={queryClient}>
       <BrowserRouter>

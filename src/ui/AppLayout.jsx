@@ -4,12 +4,12 @@ import Footer from './Footer';
 
 function AppLayout() {
   return (
-    <div className="z-10 h-screen">
-      <Header />
-      <main className=" h-full overflow-scroll ">
+    <div className="z-10 h-[100vh]">
+      <Header className="fixed h-[5vh]" />
+      <main className=" h-[83vh] overflow-scroll ">
         <Outlet />
       </main>
-      <Footer />
+      <Footer className="fixed z-10 h-[5vh]" />
     </div>
   );
 }

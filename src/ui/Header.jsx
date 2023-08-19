@@ -10,11 +10,18 @@ function Header() {
         </p>
         <h1 className="mr-5 font-bold">Dart Regex</h1>
       </Link>
-      <div>
-        <button className="rounded-md bg-blue-500 px-6 py-2 text-stone-50 hover:bg-blue-700">
-          Become a Dart Player
+      <a
+        href="https://www.linkedin.com/in/alex-maina-b72014217/"
+        target="blank"
+      >
+        <button
+          className="flex items-center rounded-md bg-blue-500 px-6 py-2 text-stone-50 hover:bg-blue-700"
+          onClick={() => window.my_modal_2.showModal()}
+        >
+          About
+          <span className="ml-2 text-2xl">🎯</span>
         </button>
-      </div>
+      </a>
     </header>
   );
 }

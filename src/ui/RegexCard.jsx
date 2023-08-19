@@ -10,7 +10,7 @@ function RegexCard({ regex }) {
         </div>
         <div className="flex flex-col  ">
           <h4 className="mb-2 font-semibold">{regex?.name}</h4>
-          <p className="   text-sm font-light tracking-wide">
+          <p className="text-sm font-light tracking-wide">
             {regex?.description.split('.')[0]}
           </p>
         </div>

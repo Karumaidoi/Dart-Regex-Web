@@ -11,6 +11,7 @@ export const data = [
     extraInfoDesc: '',
     code: `emailRegex.hasMatch("dart@gmail.com")`,
     to: '/email',
+    notes: `Regex email validation can not fully guarantee that email exists and the message can be delivered. The best way how to know for sure that email is valid is to actually send an email to that address because even paid email validation services do not provide a 100% guarantee for that.`,
   },
   {
     name: 'URL Regex',
@@ -24,6 +25,8 @@ export const data = [
     extraInfoDesc: '',
     code: `urlRegex.hasMatch("https://stackoverflow.com/questions/49757486/how-to-use-regex-in-dart")`,
     to: '/email',
+    notes:
+      'Regex expressions only cover the most commonly used types of URLs with domain names. If you have some more complex cases you might need a different solution.',
   },
 
   {
@@ -37,6 +40,7 @@ export const data = [
     extraInfoDesc: '',
     code: `phoneRegex.hasMatch("+2547195")`,
     to: '/email',
+    notes: 'Some users might have More complex phone numbers with extensions.',
   },
   {
     name: 'IP Regex',
@@ -49,6 +53,7 @@ export const data = [
     extraInfoDesc: '',
     code: `ipRegex.hasMatch("192.168.0")`,
     to: '/email',
+    notes: '',
   },
   {
     name: 'Date Regex',
@@ -61,6 +66,7 @@ export const data = [
     extraInfoDesc: '',
     code: `dateRegex.hasMatch("12/20/2000")`,
     to: '/email',
+    notes: '',
   },
   {
     name: 'Number Regex',
@@ -73,6 +79,7 @@ export const data = [
     extraInfoDesc: '',
     code: `numberRegex.hasMatch(1)`,
     to: '/email',
+    notes: '',
   },
 
   {
@@ -86,6 +93,7 @@ export const data = [
     extraInfoDesc: '',
     code: `uuidRegex.hasMatch("123e4567-e89b-12d3-a456-426614174000")`,
     to: '/email',
+    notes: '',
   },
   {
     name: 'Word Regex',
@@ -98,6 +106,7 @@ export const data = [
     extraInfoDesc: '',
     code: `wordRegex.hasMatch("Dart")`,
     to: '/email',
+    notes: '',
   },
   {
     name: 'ZIP Regex',
@@ -110,6 +119,7 @@ export const data = [
     extraInfoDesc: '',
     code: `zipRegex.hasMatch("00100")`,
     to: '/email',
+    notes: '',
   },
   {
     name: 'GUID Regex',
@@ -122,6 +132,7 @@ export const data = [
     extraInfoDesc: '',
     code: `guidRegex.hasMatch("51d52cf1-83c9-4f02-b117-703ecb728b74")`,
     to: '/email',
+    notes: '',
   },
 
   {
@@ -135,6 +146,7 @@ export const data = [
     extraInfoDesc: '',
     code: `passwordRegex.hasMatch("dart@-t")`,
     to: '/email',
+    notes: '',
   },
   {
     name: 'Mac address Regex',
@@ -147,6 +159,7 @@ export const data = [
     extraInfoTitle: '',
     extraInfoDesc: '',
     to: '/email',
+    notes: '',
   },
   {
     name: 'Street address Regex',
@@ -159,5 +172,6 @@ export const data = [
     extraInfoTitle: '',
     extraInfoDesc: '',
     to: '/email',
+    notes: '',
   },
 ];

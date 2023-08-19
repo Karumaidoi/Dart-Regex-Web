@@ -4,10 +4,9 @@ import { Link, useLocation } from 'react-router-dom';
 function RegexPage() {
   const location = useLocation();
   const regex = location.state;
-  console.log(regex);
   return (
     <div className="flex justify-center align-top">
-      <div className="mt-[3rem] w-[75%] overflow-scroll border-[1px] border-solid border-stone-100 px-4 md:w-[60%]">
+      <div className="mt-[3rem] w-[100%] overflow-scroll border-[1px] border-solid border-stone-100 px-4 md:w-[60%]">
         <Link
           to="/"
           className="mb-7 mr-5 mt-7 flex max-h-4 w-max items-center rounded-full bg-blue-100 px-5 py-[1.5rem]"
@@ -40,7 +39,7 @@ function RegexPage() {
         </div>
 
         <div className="mt-[6rem]">
-          <p className="text-3xl font-light">Simple Address Regex</p>
+          <p className="text-3xl font-light">Simple {regex?.name}</p>
           <p className="mb-[1rem] mt-3 text-sm">
             Below is a regex that check for a pattern: Addr# Street Name, City,
             State ZIP code
@@ -61,20 +60,16 @@ function RegexPage() {
           </div>
         </div>
 
-        <div className="m-auto mb-3 mt-[4rem] flex max-w-[100%]  flex-col items-center justify-self-auto rounded-md bg-blue-50/50 px-5 py-8">
-          <h4 className="mb-[2rem] text-2xl font-normal">
-            Notes on street address regex validation
-          </h4>
-          <p className="text-center text-sm font-normal  leading-8 text-stone-700">
-            Validating an address with a regex is usually a bad idea because of
-            the way how address is written in different parts of the world.
-            Usually, it’s better to just check that the address is not empty and
-            let the user enter what do they want. Another way would be to use a
-            third-party library like Google Places API which will convert
-            information a user entered in a unique ID that would identify that
-            address.
-          </p>
-        </div>
+        {regex?.notes !== '' && (
+          <div className="m-auto mb-3 mt-[4rem] flex max-w-[100%]  flex-col items-center justify-self-auto rounded-md bg-blue-50/50 px-5 py-8">
+            <h4 className="mb-[2rem] text-2xl font-normal">
+              Notes on {regex?.name} validation
+            </h4>
+            <p className="text-center text-sm font-normal  leading-8 text-stone-700">
+              {regex?.notes}
+            </p>
+          </div>
+        )}
       </div>
     </div>
   );

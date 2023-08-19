@@ -2,7 +2,7 @@ import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom';
 import AppLayout from './ui/AppLayout';
 import HomePage from './pages/HomePage';
 import RegexPage from './pages/RegexPage';
-import { QueryClient, QueryClientProvider } from 'react-query';
+import { QueryClientProvider, QueryClient } from 'react-query';
 
 const queryClient = new QueryClient({
   defaultOptions: {

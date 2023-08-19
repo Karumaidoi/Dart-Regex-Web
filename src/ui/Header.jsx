@@ -1,10 +1,12 @@
+/* eslint-disable no-unused-vars */
 import { DiDart } from 'react-icons/di';
 import { Link } from 'react-router-dom';
+import { postRegex } from '../services/apiRegex';
 
 function Header() {
-  // function handleClick() {
-  //   postRegex();
-  // }
+  function handleClick() {
+    postRegex();
+  }
 
   return (
     <header className="  flex w-full items-center justify-between bg-white p-2 px-11 drop-shadow-sm dark:bg-stone-800">

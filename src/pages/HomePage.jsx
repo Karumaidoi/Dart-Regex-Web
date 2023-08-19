@@ -1,14 +1,10 @@
 /* eslint-disable no-unused-vars */
-import { useQuery, useQueryClient } from 'react-query';
 import RegexCard from '../ui/RegexCard';
 import { DiDart } from 'react-icons/di';
-import { getRegex } from '../services/apiRegex';
+import { useRegex } from '../hooks/useRegex';
 
 function HomePage() {
-  const { isLoading, error, data } = useQuery({
-    queryKey: ['regex'],
-    queryFn: getRegex,
-  });
+  const { isLoading, error, data } = useRegex();
 
   return (
     <div className="flex  flex-col bg-blue-50/20 px-8 py-10 dark:bg-stone-800 md:px-[8rem]">

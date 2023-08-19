@@ -18,7 +18,7 @@ export async function getRegex() {
   let { data, error } = await supabase.from('Regex Table').select('*');
 
   if (error) {
-    throw new Error('Unable to POST data');
+    throw new Error('Unable to GET data');
   }
 
   return data;

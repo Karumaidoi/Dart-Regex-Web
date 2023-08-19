@@ -10,7 +10,7 @@ export const data = [
     extraInfoTitle: '',
     extraInfoDesc: '',
     code: `emailRegex.hasMatch("dart@gmail.com")`,
-    to: '/email',
+    to: '/regex',
     notes: `Regex email validation can not fully guarantee that email exists and the message can be delivered. The best way how to know for sure that email is valid is to actually send an email to that address because even paid email validation services do not provide a 100% guarantee for that.`,
   },
   {
@@ -24,7 +24,7 @@ export const data = [
     extraInfoTitle: '',
     extraInfoDesc: '',
     code: `urlRegex.hasMatch("https://stackoverflow.com/questions/49757486/how-to-use-regex-in-dart")`,
-    to: '/email',
+    to: '/regex',
     notes:
       'Regex expressions only cover the most commonly used types of URLs with domain names. If you have some more complex cases you might need a different solution.',
   },
@@ -39,7 +39,7 @@ export const data = [
     extraInfoTitle: '',
     extraInfoDesc: '',
     code: `phoneRegex.hasMatch("+2547195")`,
-    to: '/email',
+    to: '/regex',
     notes: 'Some users might have More complex phone numbers with extensions.',
   },
   {
@@ -52,7 +52,7 @@ export const data = [
     extraInfoTitle: '',
     extraInfoDesc: '',
     code: `ipRegex.hasMatch("192.168.0")`,
-    to: '/email',
+    to: '/regex',
     notes: '',
   },
   {
@@ -65,7 +65,7 @@ export const data = [
     extraInfoTitle: '',
     extraInfoDesc: '',
     code: `dateRegex.hasMatch("12/20/2000")`,
-    to: '/email',
+    to: '/regex',
     notes: '',
   },
   {
@@ -78,7 +78,7 @@ export const data = [
     extraInfoTitle: '',
     extraInfoDesc: '',
     code: `numberRegex.hasMatch(1)`,
-    to: '/email',
+    to: '/regex',
     notes: '',
   },
 
@@ -92,7 +92,7 @@ export const data = [
     extraInfoTitle: '',
     extraInfoDesc: '',
     code: `uuidRegex.hasMatch("123e4567-e89b-12d3-a456-426614174000")`,
-    to: '/email',
+    to: '/regex',
     notes: '',
   },
   {
@@ -105,7 +105,7 @@ export const data = [
     extraInfoTitle: '',
     extraInfoDesc: '',
     code: `wordRegex.hasMatch("Dart")`,
-    to: '/email',
+    to: '/regex',
     notes: '',
   },
   {
@@ -118,7 +118,7 @@ export const data = [
     extraInfoTitle: '',
     extraInfoDesc: '',
     code: `zipRegex.hasMatch("00100")`,
-    to: '/email',
+    to: '/regex',
     notes: '',
   },
   {
@@ -131,7 +131,7 @@ export const data = [
     extraInfoTitle: '',
     extraInfoDesc: '',
     code: `guidRegex.hasMatch("51d52cf1-83c9-4f02-b117-703ecb728b74")`,
-    to: '/email',
+    to: '/regex',
     notes: '',
   },
 
@@ -145,7 +145,7 @@ export const data = [
     extraInfoTitle: '',
     extraInfoDesc: '',
     code: `passwordRegex.hasMatch("dart@-t")`,
-    to: '/email',
+    to: '/regex',
     notes: '',
   },
   {
@@ -158,7 +158,7 @@ export const data = [
     code: `macRegex.hasMatch("00:00:5e:00:53:af")`,
     extraInfoTitle: '',
     extraInfoDesc: '',
-    to: '/email',
+    to: '/regex',
     notes: '',
   },
   {
@@ -171,7 +171,7 @@ export const data = [
     code: `sreetRegex.hasMatch("3344 W Alameda Avenue, Lakewood, CO 80222")`,
     extraInfoTitle: '',
     extraInfoDesc: '',
-    to: '/email',
+    to: '/regex',
     notes: '',
   },
 ];

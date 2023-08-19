@@ -40,10 +40,7 @@ function RegexPage() {
 
         <div className="mt-[6rem]">
           <p className="text-3xl font-light">Simple {regex?.name}</p>
-          <p className="mb-[1rem] mt-3 text-sm">
-            Below is a regex that check for a pattern: Addr# Street Name, City,
-            State ZIP code
-          </p>
+          <p className="mb-[1rem] mt-3 text-sm">{regex?.caption}</p>
           <div className="mockup-code mockup-window">
             <pre>
               <code>{regex?.regex}</code>

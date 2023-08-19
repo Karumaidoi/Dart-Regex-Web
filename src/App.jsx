@@ -10,7 +10,7 @@ function App() {
         <Route element={<AppLayout />}>
           <Route index element={<Navigate to="dart-regex" />} />
           <Route path="dart-regex" element={<HomePage />} />
-          <Route path="email" element={<RegexPage />} />
+          <Route path="regex" element={<RegexPage />} />
         </Route>
       </Routes>
     </BrowserRouter>

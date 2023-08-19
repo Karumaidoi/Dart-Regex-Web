@@ -1,7 +1,9 @@
 import { DiDart } from 'react-icons/di';
 import { FaLinkedin } from 'react-icons/fa';
+import { useCurrentYear } from '../hooks/useCurrentYear';
 
 function Footer() {
+  const year = useCurrentYear();
   return (
     <footer className=" z-10 w-full bg-white p-5 drop-shadow-sm dark:bg-stone-800">
       <div className="flex items-center justify-between">
@@ -14,7 +16,9 @@ function Footer() {
           </a>
         </div>
 
-        <p>Bestypie &copy; 2023 - All Rights reserved.</p>
+        <p className="hidden md:block">
+          Maina &copy; {year} - All Rights reserved.
+        </p>
       </div>
     </footer>
   );

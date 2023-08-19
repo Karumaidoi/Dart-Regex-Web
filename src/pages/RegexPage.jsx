@@ -1,4 +1,4 @@
-import { DiGitBranch } from 'react-icons/di';
+import { DiDart, DiGitBranch } from 'react-icons/di';
 import { Link, useLocation } from 'react-router-dom';
 
 function RegexPage() {
@@ -27,16 +27,29 @@ function RegexPage() {
           </div>
         </div>
 
-        <div className="mt-[2rem]">
-          <div className=" flex w-full items-center justify-center gap-3 rounded-md bg-blue-100 px-6 py-2 font-semibold text-blue-500 ">
-            <span className="text-2xl">
-              <DiGitBranch />
-            </span>
-            <a className="cursor-pointer hover:underline">
-              Contribute Regex Expression. Get Started!.
-            </a>
+        {!regex?.inProgress && (
+          <div className="mt-[2rem]">
+            <div className=" flex w-full items-center justify-center gap-3 rounded-md bg-blue-100 px-6 py-2 font-semibold text-blue-500 ">
+              <span className="text-2xl">
+                <DiDart />
+              </span>
+              Dart 3 Compatible!.
+            </div>
           </div>
-        </div>
+        )}
+
+        {regex?.inProgress && (
+          <div className="mt-[2rem]">
+            <div className=" flex w-full items-center justify-center gap-3 rounded-md bg-blue-100 px-6 py-2 font-semibold text-blue-500 ">
+              <span className="text-2xl">
+                <DiGitBranch />
+              </span>
+              <a className="cursor-pointer hover:underline">
+                Contribute Regex Expression. Get Started!.
+              </a>
+            </div>
+          </div>
+        )}
 
         <div className="mt-[6rem]">
           <p className="text-3xl font-light">Simple {regex?.name}</p>

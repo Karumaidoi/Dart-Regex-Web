@@ -14,17 +14,22 @@ function Header() {
         <p className="text-4xl text-stone-400">
           <DiDart />
         </p>
-        <h1 className="mr-5 font-bold dark:text-stone-50">Dart Regex</h1>
+        <h1 className="mr-5 hidden font-bold dark:text-stone-50 sm:block">
+          Dart Regex
+        </h1>
       </Link>
-      <a
+      <div
         href="https://www.linkedin.com/in/alex-maina-b72014217/"
         target="blank"
       >
-        <button className="flex items-center rounded-md bg-blue-500 px-6 py-2 text-stone-50 hover:bg-blue-700">
+        <button
+          className="flex items-center rounded-md bg-blue-500 px-6 py-2 text-stone-50 hover:bg-blue-700"
+          onClick={handleClick}
+        >
           About
           <span className="ml-2 text-2xl">🎯</span>
         </button>
-      </a>
+      </div>
     </header>
   );
 }

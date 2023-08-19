@@ -11,6 +11,7 @@ export const data = [
     extraInfoDesc: '',
     code: `emailRegex.hasMatch("dart@gmail.com")`,
     to: '/regex',
+    inProgress: false,
     notes: `Regex email validation can not fully guarantee that email exists and the message can be delivered. The best way how to know for sure that email is valid is to actually send an email to that address because even paid email validation services do not provide a 100% guarantee for that.`,
   },
   {
@@ -25,6 +26,7 @@ export const data = [
     extraInfoDesc: '',
     code: `urlRegex.hasMatch("https://stackoverflow.com/questions/49757486/how-to-use-regex-in-dart")`,
     to: '/regex',
+    inProgress: false,
     notes:
       'Regex expressions only cover the most commonly used types of URLs with domain names. If you have some more complex cases you might need a different solution.',
   },
@@ -40,6 +42,7 @@ export const data = [
     extraInfoDesc: '',
     code: `phoneRegex.hasMatch("+2547195")`,
     to: '/regex',
+    inProgress: false,
     notes: 'Some users might have More complex phone numbers with extensions.',
   },
   {
@@ -53,6 +56,7 @@ export const data = [
     extraInfoDesc: '',
     code: `ipRegex.hasMatch("192.168.0")`,
     to: '/regex',
+    inProgress: false,
     notes: '',
   },
   {
@@ -66,6 +70,7 @@ export const data = [
     extraInfoDesc: '',
     code: `dateRegex.hasMatch("12/20/2000")`,
     to: '/regex',
+    inProgress: false,
     notes: '',
   },
   {
@@ -79,6 +84,7 @@ export const data = [
     extraInfoDesc: '',
     code: `numberRegex.hasMatch(1)`,
     to: '/regex',
+    inProgress: false,
     notes: '',
   },
 
@@ -93,6 +99,7 @@ export const data = [
     extraInfoDesc: '',
     code: `uuidRegex.hasMatch("123e4567-e89b-12d3-a456-426614174000")`,
     to: '/regex',
+    inProgress: false,
     notes: '',
   },
   {
@@ -106,6 +113,7 @@ export const data = [
     extraInfoDesc: '',
     code: `wordRegex.hasMatch("Dart")`,
     to: '/regex',
+    inProgress: false,
     notes: '',
   },
   {
@@ -119,6 +127,7 @@ export const data = [
     extraInfoDesc: '',
     code: `zipRegex.hasMatch("00100")`,
     to: '/regex',
+    inProgress: false,
     notes: '',
   },
   {
@@ -132,6 +141,7 @@ export const data = [
     extraInfoDesc: '',
     code: `guidRegex.hasMatch("51d52cf1-83c9-4f02-b117-703ecb728b74")`,
     to: '/regex',
+    inProgress: false,
     notes: '',
   },
 
@@ -146,6 +156,7 @@ export const data = [
     extraInfoDesc: '',
     code: `passwordRegex.hasMatch("dart@-t")`,
     to: '/regex',
+    inProgress: false,
     notes: '',
   },
   {
@@ -159,6 +170,7 @@ export const data = [
     extraInfoTitle: '',
     extraInfoDesc: '',
     to: '/regex',
+    inProgress: false,
     notes: '',
   },
   {
@@ -172,6 +184,7 @@ export const data = [
     extraInfoTitle: '',
     extraInfoDesc: '',
     to: '/regex',
+    inProgress: false,
     notes: '',
   },
   {
@@ -185,6 +198,7 @@ export const data = [
     extraInfoTitle: '',
     extraInfoDesc: '',
     to: '/regex',
+    inProgress: false,
     notes:
       'This number has the following rules - consists of 9 digits and usually divided by 3 parts by hyphen (XXX-XX-XXXX) -The first part can not be 000, 666, or between 900-900.Second part can not be 00.Third part can not be 0000',
   },

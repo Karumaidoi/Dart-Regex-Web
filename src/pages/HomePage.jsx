@@ -1,16 +1,22 @@
 /* eslint-disable no-unused-vars */
-import { data } from '../data/regex';
+import { useQuery, useQueryClient } from 'react-query';
 import RegexCard from '../ui/RegexCard';
 import { DiDart } from 'react-icons/di';
+import { getRegex } from '../services/apiRegex';
 
 function HomePage() {
+  const { isLoading, error, data } = useQuery({
+    queryKey: ['regex'],
+    queryFn: getRegex,
+  });
+
   return (
-    <div className="flex  flex-col bg-blue-50/20 px-8 py-10 md:px-[8rem]">
+    <div className="flex  flex-col bg-blue-50/20 px-8 py-10 dark:bg-stone-800 md:px-[8rem]">
       <div>
-        <h4 className="text-5xl leading-normal tracking-wide">
+        <h4 className="text-5xl leading-normal tracking-wide dark:text-white">
           Dart Regex <br /> Library
         </h4>
-        <p className="mt-4  leading-relaxed">
+        <p className="mt-4  leading-relaxed dark:text-white">
           RegEx Library - a curated list of useful regular expressions for
           <br /> Dart language.
         </p>
@@ -25,9 +31,13 @@ function HomePage() {
       </div>
 
       <div className="mt-10 grid grid-cols-1 gap-4  lg:grid-cols-2">
-        {data.map((regex, i) => (
-          <RegexCard regex={regex} key={i} />
-        ))}
+        {isLoading ? (
+          <div className="flex items-center justify-center">
+            <span className="loading loading-ring loading-lg"></span>
+          </div>
+        ) : (
+          data?.map((regex, i) => <RegexCard regex={regex} key={regex.id} />)
+        )}
       </div>
     </div>
   );

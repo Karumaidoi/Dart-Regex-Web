@@ -174,4 +174,18 @@ export const data = [
     to: '/regex',
     notes: '',
   },
+  {
+    name: 'SSN Regex',
+    caption: `A regular expression to check whether a String is a valid SSN address`,
+    image: '🏡',
+    description:
+      'SSN stands for social security number and is issued to US citizens, permanent and temporary residents.',
+    regex: `RegExp(r'^(?!666|000|9\d{2})\d{3}-(?!00)\d{2}-(?!0{4})\d{4}$')`,
+    code: `ssnRegex.hasMatch("100-22-3333t")`,
+    extraInfoTitle: '',
+    extraInfoDesc: '',
+    to: '/regex',
+    notes:
+      'This number has the following rules - consists of 9 digits and usually divided by 3 parts by hyphen (XXX-XX-XXXX) -The first part can not be 000, 666, or between 900-900.Second part can not be 00.Third part can not be 0000',
+  },
 ];

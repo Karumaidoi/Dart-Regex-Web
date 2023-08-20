@@ -1,10 +1,10 @@
 import { useQuery } from 'react-query';
-import { getRegex } from '../services/apiRegex';
+import { getRegex as getRegexApi } from '../services/apiRegex';
 
 export function useRegex() {
   const { isLoading, error, data } = useQuery({
     queryKey: ['regex'],
-    queryFn: getRegex,
+    queryFn: getRegexApi,
   });
 
   return { isLoading, error, data };
